@@ -7,7 +7,11 @@ public class BaseBallTeam {
     private int draw;
     double getrate;
 
-    //
+    //エラー回避のためコントラクタ引数なしも作成する
+    public BaseBallTeam() {
+    }
+
+    //コントラクタ引数アリを設定する
     public BaseBallTeam(String name,int wins, int loss, int draw) {
         this.name = name;
         this.win = wins;
